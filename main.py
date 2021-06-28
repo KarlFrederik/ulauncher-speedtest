@@ -17,9 +17,9 @@ sdownload = s.download()
 
 notifiyer =    Notification(
 	        title='Speedtest Results',
-	        description=supload,
+	        description='Download: ' + str(sdownload) + ' Upload: ' + str(supload),
 	        icon_path='images/icon.png',
-            duration=10,
+            duration=15,
             urgency='normal'
 		).send()
 
@@ -36,11 +36,11 @@ class KeywordQueryEventListener(EventListener):
 
     def on_event(self, event, extension):
         items = []
-        for i in range(5):
-            items.append(ExtensionResultItem(icon='images/icon.png',
-                                             name='Item %s' % i,
-                                             description='Item description %s' % i,
-                                             on_enter=notifiyer))
+
+        items.append(ExtensionResultItem(icon='images/icon.png',
+                                         name='Speedtest',
+                                         description='Item description',
+                                         on_enter=notifiyer, keep_app_open=False))
 
         return RenderResultListAction(items)
 
