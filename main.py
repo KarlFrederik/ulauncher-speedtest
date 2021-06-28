@@ -39,8 +39,8 @@ class KeywordQueryEventListener(EventListener):
 
         items.append(ExtensionResultItem(icon='images/icon.png',
                                          name='Speedtest',
-                                         description='Item description',
-                                         on_enter=notifiyer, keep_app_open=False))
+                                         description='Download/Upload',
+                                         on_enter=notifiyer))
 
         return RenderResultListAction(items)
 
