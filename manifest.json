@@ -5,7 +5,7 @@
   "developer_name": "karl_f",
   "icon": "images/icon.png",
   "options": {
-    "query_debounce": 0.1
+    "query_debounce": 5
   },
   "preferences": [
     {
