@@ -1,0 +1,18 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Speedtest",
+  "description": "Speedtest for Ulauncher",
+  "developer_name": "karl_f",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "sp_kw",
+      "type": "keyword",
+      "name": "Trigger Keyword",
+      "default_value": "sp"
+    }
+  ]
+}
