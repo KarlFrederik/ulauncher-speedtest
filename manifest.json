@@ -11,7 +11,7 @@
     {
       "id": "sp_kw",
       "type": "keyword",
-      "name": "Trigger Keyword",
+      "name": "Trigger",
       "default_value": "sp"
     }
   ]
