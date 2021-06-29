@@ -53,7 +53,7 @@ notifiyer =    Notification(
 notifyOnEnter = notifiyerRunning, notifiyer
 
 
-class Extension(Extension):
+class DemoExtension(Extension):
 
     def __init__(self):
         super(DemoExtension, self).__init__()
