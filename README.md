@@ -1,6 +1,6 @@
 # ulauncher-speedtest
 
-ulauncher-speedtest is a basic extension for Speedtest in Ulauncher.
+ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.
 
 # How to initialise
 1. Open the Ulauncher Settings
