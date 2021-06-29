@@ -1,6 +1,6 @@
 # ulauncher-speedtest
 
-ulauncher-speedtest is a basic extension for Ulauncher.
+ulauncher-speedtest is a basic extension for Speedtest in Ulauncher.
 
 # How to initialise
 1. Open the Ulauncher Settings
@@ -11,9 +11,7 @@ ulauncher-speedtest is a basic extension for Ulauncher.
 6. If needed, customize the "Trigger Keyword". This is the word you have to type into the Ulauncher to activate this extension
 7. The Start-Up can take a minute.
 8. Open the Ulauncher, type your Keyword and a space after that, you may have to wait a minute.
-9. After you clicked on "Speedtest", you may have to wait while the Speedtest is preparing.
-10. When the test is done, you will get a Push Notification
+9. The first result will show your current Speeds (Download, Upload, Ping).
 
-# Credits
-Speedtest By Ookla 
-py-notifier 0.3.1
+# Development
+This is currently under Development.
