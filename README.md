@@ -2,8 +2,8 @@
 
 ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.
 
-# How to initialise
-1. Download the initalise Script by opening your CLI and copy paste this into it: `wget https://raw.githubusercontent.com/KarlFrederik/ulauncher-speedtest/master/installscript.sh`
+# How to initialize
+1. Download to initialize Script by opening your CLI and copy and paste this into it: `wget https://raw.githubusercontent.com/KarlFrederik/ulauncher-speedtest/master/installscript.sh`
 2. type: `sudo bash installscript.sh`
 3. The Installer will now install speedtest-cli, py-notifier and PIP.
 4. Open the Ulauncher **Settings**
@@ -13,7 +13,7 @@ ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.
 8. Click **Add**
 9. The Start-Up can take a minute.
 10. Open the Ulauncher, type your Keyword (standard keyword is **sp**) and a space after that, you may have to wait a minute.
-11. The first result will show your current Speeds (Download, Upload, Ping).
+11. The first result will show your current speeds (Download, Upload, Ping).
 
 
 # Development
