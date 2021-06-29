@@ -11,10 +11,9 @@ ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.
 6. Click **"Add extension"**
 7. Copy and paste this URL: `https://github.com/KarlFrederik/ulauncher-speedtest`
 8. Click **Add**
-9. If needed, customize the "Trigger Keyword". This is the word you have to type into the Ulauncher to activate this extension
-10. The Start-Up can take a minute.
-11. Open the Ulauncher, type your Keyword (standard keyword is **sp**) and a space after that, you may have to wait a minute.
-12. The first result will show your current Speeds (Download, Upload, Ping).
+9. The Start-Up can take a minute.
+10. Open the Ulauncher, type your Keyword (standard keyword is **sp**) and a space after that, you may have to wait a minute.
+11. The first result will show your current Speeds (Download, Upload, Ping).
 
 
 # Development
