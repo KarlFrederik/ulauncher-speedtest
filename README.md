@@ -14,4 +14,4 @@ ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.
 9. The first result will show your current Speeds (Download, Upload, Ping).
 
 # Development
-This is currently under Development.
+This extension is currently under testing and in development.
