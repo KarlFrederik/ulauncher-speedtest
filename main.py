@@ -15,31 +15,45 @@ from pynotifier import Notification
 import speedtest
 import time
 import math
+from datetime import datetime
 
 # Initalised speedtest.net
 s = speedtest.Speedtest()
 
+# Sends a Push-Notification while the Speedtest is Preparing
+notifiyerRunning =    Notification(
+	        title='Speedtest Running',
+	        description='Please wait while the Speedtest is running',
+	        icon_path='.local/share/ulauncher/extensions/speedtest.test/images/icon.png',
+            duration=20,
+            urgency='normal'
+		).send()
 
-# Does Speedtest and stores the result into aList for Upload or bList for Download
-aList = [0];
-aList = round((round(s.upload()) / 1048576), 2)
-bList = [0]
-bList = round((round(s.download()) / 1048576), 2)
+
+
+# Does Speedtest and stores the result into upList for Upload, downList for Download and pingList for Ping
+upList = [0];
+upList = round((round(s.upload()) / 1048576), 2)
+downList = [0]
+downList = round((round(s.download()) / 1048576), 2)
+pingList = [0]
+pingList = round(s.results.ping)
 
 
 
 # Sends a Notification with the Speedtest result
 notifiyer =    Notification(
 	        title='Speedtest Results',
-	        description='Upload: ' + str(aList) + " Download: " + str(bList),
+	        description='Download: ' + str(downList) + " mbps" + ", Upload: " + str(upList) + " mbps, " + 'Ping: ' + str(pingList) + ' ms',
 	        icon_path='images/icon.png',
-            duration=15,
+            duration=30,
             urgency='normal'
 		).send()
 
+notifyOnEnter = notifiyerRunning, notifiyer
 
 
-class DemoExtension(Extension):
+class Extension(Extension):
 
     def __init__(self):
         super(DemoExtension, self).__init__()
@@ -53,8 +67,10 @@ class KeywordQueryEventListener(EventListener):
 
         items.append(ExtensionResultItem(icon='images/icon.png',
                                          name='Speedtest',
-                                         description="Download: " + bList + ", Upload: " + alist,
+                                         description='Download: ' + str(downList) + " mbps" + ", Upload: " + str(upList) + " mbps, " + 'Ping: ' + str(pingList) + ' ms',
                                          on_enter=HideWindowAction()))
+
+
 
         return RenderResultListAction(items)
 
