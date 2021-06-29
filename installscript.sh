@@ -1,4 +1,4 @@
-# ulauncher-speedtest init description
+# ulauncher-speedtest init script
 # by Karl_F
 
 #This Script will Install PIP, speedtest-cli and pynotifier
