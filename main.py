@@ -1,3 +1,7 @@
+# ulauncher-speedtest
+# https://github.com/KarlFrederik/ulauncher-speedtest
+# by Karl_F
+
 from ulauncher.api.client.Extension import Extension
 import gi
 gi.require_version('Gtk', '3.0')
@@ -9,15 +13,25 @@ from ulauncher.api.shared.action.RenderResultListAction import RenderResultListA
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
 from pynotifier import Notification
 import speedtest
+import time
+import math
 
+# Initalised speedtest.net
 s = speedtest.Speedtest()
 
-supload = s.upload()
-sdownload = s.download()
 
+# Does Speedtest and stores the result into aList for Upload or bList for Download
+aList = [0];
+aList = round((round(s.upload()) / 1048576), 2)
+bList = [0]
+bList = round((round(s.download()) / 1048576), 2)
+
+
+
+# Sends a Notification with the Speedtest result
 notifiyer =    Notification(
 	        title='Speedtest Results',
-	        description='Download: ' + str(sdownload) + ' Upload: ' + str(supload),
+	        description='Upload: ' + str(aList) + " Download: " + str(bList),
 	        icon_path='images/icon.png',
             duration=15,
             urgency='normal'
@@ -39,8 +53,8 @@ class KeywordQueryEventListener(EventListener):
 
         items.append(ExtensionResultItem(icon='images/icon.png',
                                          name='Speedtest',
-                                         description='Download/Upload',
-                                         on_enter=notifiyer))
+                                         description="Download: " + bList + ", Upload: " + alist,
+                                         on_enter=HideWindowAction()))
 
         return RenderResultListAction(items)
 
