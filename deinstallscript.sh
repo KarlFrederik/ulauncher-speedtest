@@ -5,3 +5,8 @@
 
 pip uninstall py-notifier
 pip uninstall speedtest-cli
+echo
+echo
+echo "End of the deinstaller, follow the instruction on https://github.com/KarlFrederik/ulauncher-speedtest"
+echo
+echo
