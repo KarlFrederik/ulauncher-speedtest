@@ -67,7 +67,7 @@ class KeywordQueryEventListener(EventListener):
 
         items.append(ExtensionResultItem(icon='images/icon.png',
                                          name='Speedtest',
-                                         description='Download: ' + str(downList) + " mbps" + ", Upload: " + str(upList) + " mbps, " + 'Ping: ' + str(pingList) + ' ms',
+                                         description='Download: ' + str(round((round(s.download()) / 1048576), 2)) + " mbps" + ", Upload: " + str(round((round(s.upload()) / 1048576), 2)) + " mbps, " + 'Ping: ' + str(round(s.results.ping)) + ' ms',
                                          on_enter=HideWindowAction()))
 
 
