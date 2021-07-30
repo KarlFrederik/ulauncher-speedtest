@@ -13,7 +13,6 @@
       "type": "keyword",
       "name": "Trigger",
       "default_value": "sp"
-      "description": "If you experience any problems, read the Readme.md on the GitHub page."
     }
   ]
 }
