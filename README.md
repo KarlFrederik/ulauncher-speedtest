@@ -2,7 +2,7 @@
 
 ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.&#x20;
 
-\# How to initialize&#x20;
+**How to initialize**&#x20;
 
 1\. Download to initialize Script by opening your CLI and copy and paste this into it: `wget https://raw.githubusercontent.com/KarlFrederik/ulauncher-speedtest/master/installscript.sh`&#x20;
 
@@ -28,4 +28,6 @@ ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.&#x20;
 
 
 
-\# Development This extension is finished and will no longer be continued.
+**Development**&#x20;
+
+This extension is finished and will no longer be continued.
