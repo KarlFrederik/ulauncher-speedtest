@@ -1,6 +1,6 @@
 # ulauncher-speedtest
 # https://github.com/KarlFrederik/ulauncher-speedtest
-# by Karl_F
+# by karl_f under the GPL license
 
 from ulauncher.api.client.Extension import Extension
 import gi
