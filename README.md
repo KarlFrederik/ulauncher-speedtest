@@ -19,4 +19,4 @@ You'll find my information in the [Wiki](https://github.com/KarlFrederik/ulaunch
 
 
 # Development
-This extension is currently under testing and in development.
+This extension is finished and will no longer be continued.
