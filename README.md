@@ -15,7 +15,7 @@ ulauncher-speedtest is a basic extension for speedtest.net in Ulauncher.
 10. Open the Ulauncher, type your Keyword (standard keyword is **sp**) and a space after that, you may have to wait while the speedtest runs.
 11. The first result will show your current speeds (Download, Upload, Ping).
 
-You'll find my information in the [Wiki](https://github.com/KarlFrederik/ulauncher-speedtest/wiki)
+You'll find more information in the [Wiki](https://github.com/KarlFrederik/ulauncher-speedtest/wiki)
 
 
 # Development
