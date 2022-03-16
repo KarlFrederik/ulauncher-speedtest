@@ -1,5 +1,6 @@
 # ulauncher-speedtest uninstall script
-# by Karl_F
+# https://github.com/KarlFrederik/ulauncher-speedtest
+# by KarlFrederik
 
 #This Script will deinstall speedtest-cli and pynotifier
 
