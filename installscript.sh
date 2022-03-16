@@ -1,4 +1,5 @@
 # ulauncher-speedtest init script
+# https://github.com/KarlFrederik/ulauncher-speedtest
 # by KarlFrederik
 
 #This Script will Install PIP, speedtest-cli and pynotifier
