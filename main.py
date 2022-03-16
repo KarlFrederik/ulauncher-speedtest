@@ -1,6 +1,6 @@
 # ulauncher-speedtest
 # https://github.com/KarlFrederik/ulauncher-speedtest
-# by karl_f under the WTFPL license (http://www.wtfpl.net/about"
+# by karl_f under the WTFPL license (http://www.wtfpl.net/about)
 
 from ulauncher.api.client.Extension import Extension
 import gi
