@@ -2,9 +2,8 @@
 # https://github.com/KarlFrederik/ulauncher-speedtest
 # by KarlFrederik
 
-#This Script will deinstall speedtest-cli and pynotifier
+#This Script will deinstall speedtest-cli
 
-pip uninstall py-notifier
 pip uninstall speedtest-cli
 echo
 echo
